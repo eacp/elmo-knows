@@ -4,8 +4,8 @@ const loc = document.getElementById("location");
 
 // Make a request using FETCH
 
-fetch("http://ip-api.com/json/").then(res => res.json()).then((data) => {
-	ip.innerText = data.query;
+fetch("https://ipapi.co/json/").then(res => res.json()).then((data) => {
+	ip.innerText = data.ip;
 
-	loc.innerText = `${data.city}, ${data.regionName}, ${data.country}`;
+	loc.innerText = `${data.city}, ${data.region}, ${data.country_name}`;
 });
