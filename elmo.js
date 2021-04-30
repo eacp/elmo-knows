@@ -9,3 +9,8 @@ fetch("https://ipinfo.io/json").then(res => res.json()).then((data) => {
 
 	loc.innerText = `${data.city}, ${data.region}, ${data.country}`;
 });
+
+/*
+elmo-knows.web.app
+elmoknows.xyz
+*/
