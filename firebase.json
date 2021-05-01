@@ -1,12 +1,15 @@
 {
   "hosting": {
-    "public": ".",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
       ".gitignore",
-      ".firebaserc"
+      ".firebaserc",
+      "elmo.js",
+      "*.ts",
+      ".firebase"
     ],
 
     "headers": [
