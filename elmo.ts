@@ -1,5 +1,4 @@
-// The API
-const ep = "https://ipinfo.io/json";
+
 
 // IP and Place field
 const ipField = document.getElementById("ip");
@@ -15,7 +14,7 @@ interface Location {
 }
 
 // Get the location
-fetch(ep).then(res => res.json()).then(data => {
+fetch("https://ipinfo.io/json").then(res => res.json()).then(data => {
 	const loc = data as Location;
 
 	ipField.innerText = loc.ip;
